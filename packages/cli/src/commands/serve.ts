@@ -6,6 +6,7 @@ interface LocalApiError {
   code: string;
 }
 
+
 export const serveCommand = new Command()
   .command('serve [filename]')
   .description('Open a file for editing')
