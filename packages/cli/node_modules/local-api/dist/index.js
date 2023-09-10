@@ -7,8 +7,10 @@ exports.serve = void 0;
 var express_1 = __importDefault(require("express"));
 var http_proxy_middleware_1 = require("http-proxy-middleware");
 var path_1 = __importDefault(require("path"));
+var cells_1 = require("./routes/cells");
 var serve = function (port, filename, dir, useProxy) {
     var app = express_1.default();
+    app.use(cells_1.createCellsRouter(filename, dir));
     if (useProxy) {
         app.use('/', http_proxy_middleware_1.createProxyMiddleware({
             target: 'http://127.0.0.1:3000',
