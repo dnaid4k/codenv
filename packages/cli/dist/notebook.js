@@ -1,1 +1,1 @@
-[{"content":"khgkhjkghhgkghjghjghjghjghkghkkhjkjhkhjkjhkjkhk7ytgfghfghfghfghfghgfhfghfghfghfghfgh","type":"code","id":"rz3"},{"content":"","type":"text","id":"fuh"}]
+[{"content":"const a = 1;","type":"code","id":"hji"},{"content":"show(a)","type":"code","id":"qml"}]

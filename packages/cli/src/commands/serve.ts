@@ -17,6 +17,7 @@ export const serveCommand = new Command()
     const isLocalApiError = (err: any): err is LocalApiError => {
       return typeof err.code === "string";
     };
+    
 
     try {
       const dir = path.join(process.cwd(), path.dirname(filename));
